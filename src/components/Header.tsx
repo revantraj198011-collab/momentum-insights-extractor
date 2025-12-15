@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png";
 
 const navLinks = [
   { name: "Home", href: "#home" },
@@ -14,13 +15,11 @@ export const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="#home" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-lg gradient-bg flex items-center justify-center">
-              <span className="text-xl font-bold text-white">M</span>
-            </div>
+          <a href="#home" className="flex items-center gap-3">
+            <img src={logo} alt="Momentum AI Logo" className="h-12 w-auto" />
             <span className="text-xl font-display font-bold text-foreground">
               Momentum<span className="gradient-text">AI</span>
             </span>
@@ -41,7 +40,7 @@ export const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button className="gradient-bg hover:opacity-90 transition-opacity">
+            <Button className="gradient-bg hover:opacity-90 transition-opacity text-primary-foreground font-semibold">
               Get Started
             </Button>
           </div>
@@ -70,7 +69,7 @@ export const Header = () => {
                   {link.name}
                 </a>
               ))}
-              <Button className="gradient-bg hover:opacity-90 transition-opacity w-full mt-2">
+              <Button className="gradient-bg hover:opacity-90 transition-opacity w-full mt-2 text-primary-foreground font-semibold">
                 Get Started
               </Button>
             </div>
