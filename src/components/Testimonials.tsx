@@ -3,7 +3,6 @@ import { Star } from "lucide-react";
 const testimonials = [
   {
     name: "Sarah Johnson",
-    role: "CEO, TechStart Inc",
     content:
       "Momentum AI transformed our lead generation process. We saw a 300% increase in qualified leads within the first month.",
     rating: 5,
@@ -11,7 +10,6 @@ const testimonials = [
   },
   {
     name: "Michael Chen",
-    role: "Marketing Director, GrowthHub",
     content:
       "The AI chatbot handles 80% of our customer inquiries automatically. Our team can now focus on high-value tasks.",
     rating: 5,
@@ -19,7 +17,6 @@ const testimonials = [
   },
   {
     name: "Emily Rodriguez",
-    role: "Founder, ScaleUp Agency",
     content:
       "Best investment we've made. The ROI was clear within weeks, and the support team is incredibly responsive.",
     rating: 5,
@@ -66,9 +63,8 @@ export const Testimonials = () => {
                 <div className="w-12 h-12 rounded-full gradient-bg flex items-center justify-center">
                   <span className="text-sm font-semibold text-white">{testimonial.avatar}</span>
                 </div>
-                <div>
+              <div>
                   <div className="font-semibold text-foreground">{testimonial.name}</div>
-                  <div className="text-sm text-muted-foreground">{testimonial.role}</div>
                 </div>
               </div>
             </div>

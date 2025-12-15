@@ -20,12 +20,9 @@ export const CTA = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button size="lg" className="gradient-bg hover:opacity-90 transition-opacity text-lg px-8 py-6 glow">
+            <Button size="lg" className="gradient-bg hover:opacity-90 transition-opacity text-lg px-8 py-6 glow text-primary-foreground font-semibold">
               Schedule a Demo
               <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-border hover:bg-secondary">
-              Contact Sales
             </Button>
           </div>
 

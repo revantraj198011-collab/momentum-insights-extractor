@@ -2,8 +2,6 @@ import { CheckCircle } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const highlights = [
-  "Expert team with 10+ years in AI and automation",
-  "Proven track record with 500+ successful implementations",
   "Dedicated support and continuous optimization",
   "Custom solutions tailored to your business needs",
 ];
