@@ -1,4 +1,5 @@
 import { Twitter, Linkedin, Instagram, Mail } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const footerLinks = {
   company: [
@@ -29,10 +30,8 @@ export const Footer = () => {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div className="md:col-span-2">
-            <a href="#home" className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-lg gradient-bg flex items-center justify-center">
-                <span className="text-xl font-bold text-white">M</span>
-              </div>
+            <a href="#home" className="flex items-center gap-3 mb-4">
+              <img src={logo} alt="Momentum AI Logo" className="h-12 w-auto" />
               <span className="text-xl font-display font-bold text-foreground">
                 Momentum<span className="gradient-text">AI</span>
               </span>

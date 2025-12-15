@@ -1,4 +1,5 @@
 import { CheckCircle } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const highlights = [
   "Expert team with 10+ years in AI and automation",
@@ -51,8 +52,8 @@ export const About = () => {
               {/* Gradient Background */}
               <div className="aspect-square bg-gradient-to-br from-primary/20 via-accent/20 to-primary/20 rounded-2xl flex items-center justify-center">
                 <div className="text-center p-8">
-                  <div className="w-32 h-32 mx-auto rounded-full gradient-bg flex items-center justify-center mb-6 glow animate-float">
-                    <span className="text-5xl font-bold text-white">RR</span>
+                  <div className="w-40 h-40 mx-auto rounded-2xl overflow-hidden mb-6 glow animate-float bg-background/50 p-4">
+                    <img src={logo} alt="Momentum AI" className="w-full h-full object-contain" />
                   </div>
                   <h3 className="text-2xl font-display font-bold text-foreground mb-2">Revant Raj</h3>
                   <p className="text-muted-foreground">Founder & CEO</p>
