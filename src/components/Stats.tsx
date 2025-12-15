@@ -15,7 +15,7 @@ export const Stats = () => {
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="text-center animate-fade-in"
+              className="text-center animate-fade-in p-6 rounded-xl transition-all duration-300 hover:scale-105 hover:bg-primary/5 cursor-default"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="text-4xl md:text-5xl font-display font-bold gradient-text mb-2">
@@ -27,6 +27,9 @@ export const Stats = () => {
             </div>
           ))}
         </div>
+        <p className="text-center mt-8 text-xs text-muted-foreground/50">
+          *based on research and personal experience
+        </p>
       </div>
     </section>
   );
