@@ -7,6 +7,7 @@ import { Mission } from "@/components/Mission";
 import { Testimonials } from "@/components/Testimonials";
 import { CTA } from "@/components/CTA";
 import { Footer } from "@/components/Footer";
+import VoiceWidget from "@/components/VoiceWidget";
 
 const Index = () => {
   return (
@@ -22,6 +23,7 @@ const Index = () => {
         <CTA />
       </main>
       <Footer />
+      <VoiceWidget />
     </div>
   );
 };
