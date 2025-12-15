@@ -40,7 +40,10 @@ export const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button className="gradient-bg hover:opacity-90 transition-opacity text-primary-foreground font-semibold">
+            <Button 
+              className="gradient-bg hover:opacity-90 transition-opacity text-primary-foreground font-semibold"
+              onClick={() => window.open('https://calendly.com/revantraj198011/30min', '_blank')}
+            >
               Get Started
             </Button>
           </div>
@@ -69,7 +72,10 @@ export const Header = () => {
                   {link.name}
                 </a>
               ))}
-              <Button className="gradient-bg hover:opacity-90 transition-opacity w-full mt-2 text-primary-foreground font-semibold">
+              <Button 
+                className="gradient-bg hover:opacity-90 transition-opacity w-full mt-2 text-primary-foreground font-semibold"
+                onClick={() => window.open('https://calendly.com/revantraj198011/30min', '_blank')}
+              >
                 Get Started
               </Button>
             </div>
