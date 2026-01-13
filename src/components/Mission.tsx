@@ -3,13 +3,10 @@ import { Target, Eye } from "lucide-react";
 export const Mission = () => {
   return (
     <section className="py-24 relative overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-accent/5" />
-      
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid md:grid-cols-2 gap-12">
           {/* Mission */}
-          <div className="p-8 rounded-2xl bg-card border border-border animate-fade-in">
+          <div className="p-8 rounded-2xl bg-card/40 backdrop-blur-sm border border-border/50 hover:bg-card/60 hover:border-primary/30 transition-all duration-300 animate-fade-in">
             <div className="w-14 h-14 rounded-xl gradient-bg flex items-center justify-center mb-6">
               <Target className="w-7 h-7 text-white" />
             </div>
@@ -23,7 +20,7 @@ export const Mission = () => {
           </div>
 
           {/* Vision */}
-          <div className="p-8 rounded-2xl bg-card border border-border animate-fade-in" style={{ animationDelay: "0.1s" }}>
+          <div className="p-8 rounded-2xl bg-card/40 backdrop-blur-sm border border-border/50 hover:bg-card/60 hover:border-primary/30 transition-all duration-300 animate-fade-in" style={{ animationDelay: "0.1s" }}>
             <div className="w-14 h-14 rounded-xl gradient-bg flex items-center justify-center mb-6">
               <Eye className="w-7 h-7 text-white" />
             </div>

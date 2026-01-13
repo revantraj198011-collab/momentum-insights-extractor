@@ -8,22 +8,34 @@ import { Mission } from "@/components/Mission";
 import { BuiltFor } from "@/components/BuiltFor";
 import { CTA } from "@/components/CTA";
 import { Footer } from "@/components/Footer";
+import ShaderBackground from "@/components/ui/shader-background";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
-      <Header />
-      <main>
-        <Hero />
-        <Stats />
-        <ValueProposition />
-        <About />
-        <Services />
-        <Mission />
-        <BuiltFor />
-        <CTA />
-      </main>
-      <Footer />
+    <div className="min-h-screen relative">
+      {/* Global Shader Background */}
+      <div className="fixed inset-0 z-0">
+        <ShaderBackground className="opacity-70" />
+      </div>
+      
+      {/* Overlay for better content readability */}
+      <div className="fixed inset-0 z-0 bg-background/30" />
+      
+      {/* Content */}
+      <div className="relative z-10">
+        <Header />
+        <main>
+          <Hero />
+          <Stats />
+          <ValueProposition />
+          <About />
+          <Services />
+          <Mission />
+          <BuiltFor />
+          <CTA />
+        </main>
+        <Footer />
+      </div>
     </div>
   );
 };

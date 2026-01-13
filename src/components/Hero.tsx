@@ -15,21 +15,15 @@ export const Hero = () => {
         fill="hsl(140, 80%, 50%)"
       />
 
-      {/* Background Effects */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1s" }} />
-      </div>
-
       {/* Grid Pattern */}
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(34,197,94,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(34,197,94,0.03)_1px,transparent_1px)] bg-[size:60px_60px]" />
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(34,197,94,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(34,197,94,0.02)_1px,transparent_1px)] bg-[size:60px_60px]" />
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-8">
           {/* Left Content */}
           <div className="flex-1 text-center lg:text-left">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/50 border border-border mb-8 animate-fade-in">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/30 backdrop-blur-sm border border-border/50 mb-8 animate-fade-in">
               <Sparkles className="w-4 h-4 text-primary" />
               <span className="text-sm text-muted-foreground">AI-Powered Business Growth</span>
             </div>
@@ -54,7 +48,7 @@ export const Hero = () => {
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </a>
               </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-border hover:bg-secondary">
+              <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-border/50 bg-background/30 backdrop-blur-sm hover:bg-secondary/50">
                 Learn More
               </Button>
             </div>

@@ -64,7 +64,7 @@ const StatCard = ({ stat, index }: { stat: typeof stats[0]; index: number }) => 
   return (
     <div
       ref={ref}
-      className="text-center animate-fade-in p-6 rounded-xl transition-all duration-300 hover:scale-105 hover:bg-primary/5 cursor-default"
+      className="text-center animate-fade-in p-6 rounded-xl transition-all duration-300 hover:scale-105 bg-card/30 backdrop-blur-sm border border-border/30 hover:bg-card/50 hover:border-primary/30 cursor-default"
       style={{ animationDelay: `${index * 0.1}s` }}
     >
       <div className="text-4xl md:text-5xl font-display font-bold gradient-text mb-2">
@@ -80,8 +80,6 @@ const StatCard = ({ stat, index }: { stat: typeof stats[0]; index: number }) => 
 export const Stats = () => {
   return (
     <section className="py-16 relative">
-      <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-accent/5 to-primary/5" />
-      
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat, index) => (

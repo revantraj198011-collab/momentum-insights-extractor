@@ -8,13 +8,10 @@ const highlights = [
 export const About = () => {
   return (
     <section id="about" className="py-24 relative">
-      {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-secondary/20 to-transparent" />
-      
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl mx-auto">
           {/* Content */}
-          <div className="animate-fade-in text-center">
+          <div className="animate-fade-in text-center p-8 rounded-2xl bg-card/30 backdrop-blur-sm border border-border/30">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">
               About <span className="gradient-text">Momentum AI</span>
             </h2>
