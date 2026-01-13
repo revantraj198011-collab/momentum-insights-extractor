@@ -128,7 +128,6 @@ const GlowingEffect = memo(
             "--start": "0",
             "--active": "0",
             "--glowingeffect-border-width": `${borderWidth}px`,
-            "--repeating-conic-gradient-times": "5",
             "--gradient":
               variant === "white"
                 ? `repeating-conic-gradient(
@@ -163,21 +162,16 @@ const GlowingEffect = memo(
         )}
       >
         <div
-          className={cn(
-            "glow",
-            "rounded-[inherit]",
-            'after:content-[""] after:rounded-[inherit] after:absolute after:inset-[calc(var(--glowingeffect-border-width)*-1)] after:[border:var(--glowingeffect-border-width)_solid_transparent]',
-            "after:[background:padding-box_padding-box_var(--black),border-box_var(--gradient)]",
-            "after:[background-attachment:fixed]",
-            "after:opacity-[var(--active)]",
-            "after:transition-opacity after:duration-300",
-            "after:[mask-clip:padding-box,border-box]",
-            "after:[mask-composite:intersect]",
-            "after:[mask:linear-gradient(transparent,transparent),linear-gradient(#fff,#fff)]"
-          )}
+          className="absolute inset-0 rounded-[inherit] overflow-hidden"
           style={
             {
               "--black": "#080808",
+              border: "var(--glowingeffect-border-width) solid transparent",
+              background: `linear-gradient(var(--black), var(--black)) padding-box, var(--gradient) border-box`,
+              backgroundAttachment: "fixed",
+              mask: "linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0)",
+              maskComposite: "exclude",
+              WebkitMaskComposite: "xor",
             } as React.CSSProperties
           }
         />
