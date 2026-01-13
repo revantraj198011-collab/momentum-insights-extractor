@@ -45,10 +45,10 @@ export const Services = () => {
           {services.map((service, index) => (
             <div
               key={service.title}
-              className="group p-6 rounded-xl bg-card/50 border border-border hover:bg-card hover:border-primary/30 transition-all duration-300 animate-fade-in-up"
+              className="group p-6 rounded-xl bg-card/40 backdrop-blur-sm border border-border/50 hover:bg-card/60 hover:border-primary/30 transition-all duration-300 animate-fade-in-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="w-12 h-12 rounded-lg bg-secondary flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors duration-300">
+              <div className="w-12 h-12 rounded-lg bg-secondary/50 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors duration-300">
                 <service.icon className="w-6 h-6 text-primary" />
               </div>
               <h3 className="text-lg font-display font-semibold mb-2 text-foreground">

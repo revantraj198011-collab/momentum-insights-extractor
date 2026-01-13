@@ -38,7 +38,7 @@ export const ValueProposition = () => {
           {features.map((feature, index) => (
             <div
               key={feature.title}
-              className="group relative p-8 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300 animate-fade-in-up"
+              className="group relative p-8 rounded-2xl bg-card/40 backdrop-blur-sm border border-border/50 hover:border-primary/50 hover:bg-card/60 transition-all duration-300 animate-fade-in-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {/* Glow Effect */}

@@ -11,7 +11,7 @@ const footerLinks = {
 
 export const Footer = () => {
   return (
-    <footer className="py-16 border-t border-border">
+    <footer className="py-16 border-t border-border/50 bg-background/40 backdrop-blur-sm">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Brand */}
@@ -46,7 +46,7 @@ export const Footer = () => {
         </div>
 
         {/* Bottom */}
-        <div className="pt-8 border-t border-border flex items-center justify-center">
+        <div className="pt-8 border-t border-border/50 flex items-center justify-center">
           <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} Momentum AI. All rights reserved.
           </p>
