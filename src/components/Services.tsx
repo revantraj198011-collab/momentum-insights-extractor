@@ -1,10 +1,15 @@
-import { Brain, Mail, MessageSquare, BarChart3, Shield, Workflow } from "lucide-react";
+import { Brain, Mail, MessageSquare, BarChart3, Shield, Workflow, Mic } from "lucide-react";
 
 const services = [
   {
     icon: Brain,
     title: "AI Chatbots",
     description: "Intelligent conversational agents that understand context and provide human-like responses.",
+  },
+  {
+    icon: Mic,
+    title: "AI Voice Agents",
+    description: "Natural-sounding voice assistants that handle calls, appointments, and customer inquiries 24/7.",
   },
   {
     icon: Mail,
