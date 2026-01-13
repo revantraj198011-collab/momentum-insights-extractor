@@ -108,29 +108,3 @@
     }
   }
 }
-
-/* OmniDimension Widget Theme Override - Green/Teal */
-#omni-widget-component iframe,
-.omni-widget-launcher,
-[class*="omni-widget"] button,
-[id*="omni"] button {
-  background: linear-gradient(135deg, hsl(140 80% 50%), hsl(80 80% 55%)) !important;
-  border-color: hsl(140 80% 50%) !important;
-}
-
-#omni-widget-component [class*="header"],
-[id*="omni"] [class*="header"] {
-  background: linear-gradient(135deg, hsl(140 80% 50%), hsl(80 80% 55%)) !important;
-}
-
-#omni-widget-component [class*="send"],
-[id*="omni"] [class*="send"] {
-  background: hsl(140 80% 50%) !important;
-  color: hsl(160 30% 6%) !important;
-}
-
-#omni-widget-component [class*="bubble"],
-[id*="omni"] [class*="bubble"] {
-  background: hsl(160 40% 12%) !important;
-  border-color: hsl(160 25% 18%) !important;
-}

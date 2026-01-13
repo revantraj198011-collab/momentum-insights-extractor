@@ -8,7 +8,6 @@ import { Mission } from "@/components/Mission";
 import { BuiltFor } from "@/components/BuiltFor";
 import { CTA } from "@/components/CTA";
 import { Footer } from "@/components/Footer";
-import { ChatWidget } from "@/components/ChatWidget";
 import ShaderBackground from "@/components/ui/shader-background";
 
 const Index = () => {
@@ -37,9 +36,6 @@ const Index = () => {
         </main>
         <Footer />
       </div>
-      
-      {/* Chat Widget */}
-      <ChatWidget />
     </div>
   );
 };
