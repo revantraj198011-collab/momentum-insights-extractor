@@ -1,5 +1,6 @@
 import { Phone, MessageSquare, Target } from "lucide-react";
 import { GlowingEffect } from "@/components/ui/glowing-effect";
+import ShaderBackground from "@/components/ui/shader-background";
 
 const audiences = [
   {
@@ -28,17 +29,16 @@ const audiences = [
 export const BuiltFor = () => {
   return (
     <section className="py-24 relative overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-secondary/20 to-transparent" />
+      {/* Shader Background */}
+      <ShaderBackground className="opacity-80" />
       
-      {/* Animated background elements */}
-      <div className="absolute top-1/4 left-0 w-72 h-72 bg-primary/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
+      {/* Overlay for better text readability */}
+      <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-transparent to-background/40 z-[1]" />
 
       <div className="container mx-auto px-4 relative z-10">
         {/* Header */}
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6 animate-fade-in">
+          <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6 animate-fade-in backdrop-blur-sm">
             Perfect Fit
           </span>
           <h2 className="text-3xl md:text-5xl font-display font-bold mb-4 animate-fade-in">
@@ -67,7 +67,7 @@ export const BuiltFor = () => {
                   inactiveZone={0.01}
                   borderWidth={2}
                 />
-                <div className="relative h-full p-8 rounded-3xl bg-card/80 backdrop-blur-sm border border-border/50 transition-all duration-500 hover:-translate-y-2">
+                <div className="relative h-full p-8 rounded-3xl bg-card/90 backdrop-blur-md border border-border/50 transition-all duration-500 hover:-translate-y-2">
                   {/* Icon container */}
                   <div className="w-16 h-16 rounded-2xl gradient-bg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                     <audience.icon className="w-8 h-8 text-white" />
