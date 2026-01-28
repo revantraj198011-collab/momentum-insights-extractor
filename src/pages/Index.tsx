@@ -8,18 +8,23 @@ import { Mission } from "@/components/Mission";
 import { BuiltFor } from "@/components/BuiltFor";
 import { CTA } from "@/components/CTA";
 import { Footer } from "@/components/Footer";
-import ShaderBackground from "@/components/ui/shader-background";
+import NeuralBackground from "@/components/ui/flow-field-background";
 
 const Index = () => {
   return (
     <div className="min-h-screen relative">
-      {/* Global Shader Background */}
+      {/* Neural Flow Field Background */}
       <div className="fixed inset-0 z-0">
-        <ShaderBackground className="opacity-70" />
+        <NeuralBackground 
+          color="#22c55e"
+          trailOpacity={0.1}
+          particleCount={500}
+          speed={0.7}
+        />
       </div>
       
       {/* Overlay for better content readability */}
-      <div className="fixed inset-0 z-0 bg-background/30" />
+      <div className="fixed inset-0 z-0 bg-background/40" />
       
       {/* Content */}
       <div className="relative z-10">
