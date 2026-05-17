@@ -31,7 +31,7 @@ export const Hero = () => {
             {/* Headline */}
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold mb-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
               Welcome to{" "}
-              <span className="text-primary">Momentum</span>
+              <span className="text-primary">Momentum AI</span>
             </h1>
 
             {/* Tagline */}
@@ -57,7 +57,7 @@ export const Hero = () => {
 
           {/* Right Content - 3D Spline Scene */}
           <div className="flex-1 h-[400px] lg:h-[600px] w-full relative animate-fade-in rounded-[2rem] border border-border/80 bg-card shadow-[0_30px_60px_rgba(15,23,42,0.12)] overflow-hidden" style={{ animationDelay: "0.3s" }}>
-            <div className="absolute inset-0 bg-gradient-to-br from-white via-white/60 to-white/10" />
+            <div className="absolute inset-0  " />
             <SplineScene 
               scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
               className="w-full h-full relative z-10 opacity-90 [filter:grayscale(0.6)_contrast(1.05)_saturate(0.7)_brightness(1.05)]"

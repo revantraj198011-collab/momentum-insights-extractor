@@ -19,7 +19,7 @@ export const Footer = () => {
     <footer className="bg-[#0b0b0c] py-12 text-white">
       <div className="container mx-auto px-6 md:px-10">
         <div className="">
-          <div className="text-[clamp(3.5rem,12vw,10rem)] font-display font-anton font-semibold tracking-wide leading-none text-white/85">
+          <div className="text-[clamp(3.5rem,12vw,10rem)] font-display  font-semibold tracking-wide leading-none text-white/85">
             MOMENTUM AI
           </div>
 
@@ -67,20 +67,15 @@ export const Footer = () => {
               <ul className="space-y-3 text-sm text-white/70">
                 <li className="flex items-center gap-3">
                   <Phone className="h-4 w-4 text-white/50" />
-                  <a href="tel:+9101000" className="hover:text-white transition-colors">
-                    +91 01000 00000
-                  </a>
+                  
                 </li>
                 <li className="flex items-center gap-3">
                   <Mail className="h-4 w-4 text-white/50" />
                   <a href="mailto:hello@momentum.ai" className="hover:text-white transition-colors">
-                    hello@momentum.ai
+                    momentumai18@gmail.com
                   </a>
                 </li>
-                <li className="flex items-start gap-3">
-                  <MapPin className="h-4 w-4 text-white/50 mt-0.5" />
-                  <span>Connaught Place, New Delhi, India</span>
-                </li>
+             
               </ul>
             </div>
 
@@ -90,11 +85,12 @@ export const Footer = () => {
               </h4>
               <div className="flex items-center gap-3">
                 <a
-                  href="#"
+                  href="momentumai__"
                   aria-label="Instagram"
                   className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-white/70 hover:text-white transition-colors"
                 >
                   <Instagram className="h-4 w-4" />
+
                 </a>
                 <a
                   href="#"
