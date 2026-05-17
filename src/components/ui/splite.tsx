@@ -20,6 +20,20 @@ export function SplineScene({ scene, className }: SplineSceneProps) {
       <Spline
         scene={scene}
         className={className}
+        onLoad={(spline: any) => {
+          try {
+            if (spline && spline.scene) {
+              spline.scene.background = null
+            }
+            if (spline && spline.renderer && typeof spline.renderer.setClearColor === 'function') {
+              // set clear color with 0 alpha for transparency
+              spline.renderer.setClearColor(0x000000, 0)
+            }
+          } catch (e) {
+            // ignore errors silently
+          }
+        }}
+        style={{ background: 'transparent' }}
       />
     </Suspense>
   )
