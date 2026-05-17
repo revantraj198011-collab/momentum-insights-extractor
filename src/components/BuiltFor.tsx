@@ -31,13 +31,13 @@ export const BuiltFor = () => {
       <div className="container mx-auto px-4 relative z-10">
         {/* Header */}
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-2 rounded-full bg-primary/10 backdrop-blur-sm text-primary text-sm font-medium mb-6 animate-fade-in">
+          <span className="inline-block px-4 py-2 rounded-full bg-card border border-border/70 text-primary text-sm font-medium mb-6 animate-fade-in shadow-sm">
             Perfect Fit
           </span>
           <h2 className="text-3xl md:text-5xl font-display font-bold mb-4 animate-fade-in">
-            Who <span className="gradient-text">Momentum AI</span> Is Built For
+            Who <span className="text-primary">Momentum AI</span> Is Built For
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto text-lg animate-fade-in">
+          <p className="text-foreground/70 max-w-2xl mx-auto text-lg animate-fade-in">
             We understand the unique challenges of call-dependent businesses
           </p>
         </div>
@@ -54,20 +54,20 @@ export const BuiltFor = () => {
               <div className="relative h-full rounded-3xl">
                 <GlowingEffect
                   spread={40}
-                  glow={true}
-                  disabled={false}
+                  glow={false}
+                  disabled={true}
                   proximity={64}
                   inactiveZone={0.01}
                   borderWidth={2}
                 />
-                <div className="relative h-full p-8 rounded-3xl bg-card/50 backdrop-blur-md border border-border/30 transition-all duration-500 hover:-translate-y-2">
+                <div className="relative h-full p-8 rounded-3xl bg-card border border-border/80 shadow-[0_14px_34px_rgba(15,23,42,0.08)] transition-all duration-500 hover:-translate-y-2">
                   {/* Icon container */}
-                  <div className="w-16 h-16 rounded-2xl gradient-bg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <audience.icon className="w-8 h-8 text-white" />
+                  <div className="w-16 h-16 rounded-2xl bg-primary/10 border border-primary/15 flex items-center justify-center mb-6 group-hover:scale-105 transition-transform duration-300">
+                    <audience.icon className="w-8 h-8 text-primary" />
                   </div>
 
                   {/* Highlight badge */}
-                  <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold mb-4">
+                  <span className="inline-block px-3 py-1 rounded-full bg-secondary text-foreground/70 text-xs font-semibold mb-4">
                     {audience.highlight}
                   </span>
 
@@ -75,7 +75,7 @@ export const BuiltFor = () => {
                   <h3 className="text-xl font-display font-bold text-foreground mb-4 leading-tight">
                     {audience.title}
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-foreground/70 leading-relaxed">
                     {audience.description}
                   </p>
                 </div>
@@ -86,7 +86,7 @@ export const BuiltFor = () => {
 
         {/* Bottom CTA hint */}
         <div className="text-center mt-16 animate-fade-in" style={{ animationDelay: "0.5s" }}>
-          <p className="text-muted-foreground">
+          <p className="text-foreground/70">
             Sound like you? <span className="text-primary font-medium">Let's talk.</span>
           </p>
         </div>

@@ -64,13 +64,13 @@ const StatCard = ({ stat, index }: { stat: typeof stats[0]; index: number }) => 
   return (
     <div
       ref={ref}
-      className="text-center animate-fade-in p-6 rounded-xl transition-all duration-300 hover:scale-105 bg-card/30 backdrop-blur-sm border border-border/30 hover:bg-card/50 hover:border-primary/30 cursor-default"
+      className="text-center animate-fade-in p-6 rounded-3xl transition-all duration-300 hover:-translate-y-1 bg-card border border-border/80 shadow-[0_12px_28px_rgba(15,23,42,0.08)] hover:shadow-[0_18px_36px_rgba(15,23,42,0.12)] cursor-default"
       style={{ animationDelay: `${index * 0.1}s` }}
     >
-      <div className="text-4xl md:text-5xl font-display font-bold gradient-text mb-2">
+      <div className="text-4xl md:text-5xl font-display font-bold text-foreground mb-2">
         {count}{stat.suffix}
       </div>
-      <div className="text-muted-foreground text-sm md:text-base">
+      <div className="text-foreground/60 text-sm md:text-base">
         {stat.label}*
       </div>
     </div>
@@ -86,7 +86,7 @@ export const Stats = () => {
             <StatCard key={index} stat={stat} index={index} />
           ))}
         </div>
-        <p className="text-center mt-8 text-xs text-muted-foreground/50">
+        <p className="text-center mt-8 text-xs text-foreground/50">
           *based on research and personal experience
         </p>
       </div>

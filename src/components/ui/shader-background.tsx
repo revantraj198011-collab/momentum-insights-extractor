@@ -15,7 +15,7 @@ const ShaderBackground: React.FC<ShaderBackgroundProps> = ({ className }) => {
     }
   `;
 
-  // Fragment shader source code - themed with green/teal colors
+  // Fragment shader source code - dark graphite with subtle steel lines
   const fsSource = `
     precision highp float;
     uniform vec2 iResolution;
@@ -30,7 +30,7 @@ const ShaderBackground: React.FC<ShaderBackgroundProps> = ({ className }) => {
     const float minorLineFrequency = 1.0;
     const vec4 gridColor = vec4(0.5);
     const float scale = 5.0;
-    const vec4 lineColor = vec4(0.2, 0.8, 0.6, 1.0); // Green/teal line color
+    const vec4 lineColor = vec4(0.38, 0.46, 0.56, 1.0); // Subtle steel line color
     const float minLineWidth = 0.01;
     const float maxLineWidth = 0.15;
     const float lineSpeed = 1.0 * overallSpeed;
@@ -81,9 +81,9 @@ const ShaderBackground: React.FC<ShaderBackgroundProps> = ({ className }) => {
       space.x += random(space.y * warpFrequency + iTime * warpSpeed + 2.0) * warpAmplitude * horizontalFade;
 
       vec4 lines = vec4(0.0);
-      // Dark green/teal background gradient matching theme
-      vec4 bgColor1 = vec4(0.02, 0.06, 0.05, 1.0); // Dark teal
-      vec4 bgColor2 = vec4(0.04, 0.10, 0.08, 1.0); // Slightly lighter teal
+      // Dark graphite background gradient matching theme
+      vec4 bgColor1 = vec4(0.04, 0.05, 0.08, 1.0); // Deep graphite
+      vec4 bgColor2 = vec4(0.07, 0.08, 0.12, 1.0); // Slightly lighter graphite
 
       for(int l = 0; l < linesPerGroup; l++) {
         float normalizedLineIndex = float(l) / float(linesPerGroup);
@@ -106,7 +106,7 @@ const ShaderBackground: React.FC<ShaderBackgroundProps> = ({ className }) => {
       fragColor = mix(bgColor1, bgColor2, uv.x);
       fragColor *= verticalFade;
       fragColor.a = 1.0;
-      fragColor += lines * 0.6; // Slightly reduce line intensity
+      fragColor += lines * 0.4; // Subtle line intensity
 
       gl_FragColor = fragColor;
     }
@@ -201,7 +201,7 @@ const ShaderBackground: React.FC<ShaderBackgroundProps> = ({ className }) => {
     resizeCanvas();
 
     let animationId: number;
-    let startTime = Date.now();
+    const startTime = Date.now();
     
     const render = () => {
       const currentTime = (Date.now() - startTime) / 1000;

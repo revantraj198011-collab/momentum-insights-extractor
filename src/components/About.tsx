@@ -11,16 +11,16 @@ export const About = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl mx-auto">
           {/* Content */}
-          <div className="animate-fade-in text-center p-8 rounded-2xl bg-card/30 backdrop-blur-sm border border-border/30">
+          <div className="animate-fade-in text-center p-10 rounded-3xl bg-card border border-border/80 shadow-[0_14px_34px_rgba(15,23,42,0.08)]">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">
-              About <span className="gradient-text">Momentum AI</span>
+              About <span className="text-primary">Momentum AI</span>
             </h2>
-            <p className="text-muted-foreground text-lg mb-6">
+            <p className="text-foreground/70 text-lg mb-6">
               Momentum AI was founded with a simple mission: to make advanced AI technology
               accessible to businesses of all sizes. We believe that every company deserves
               the power of intelligent automation.
             </p>
-            <p className="text-muted-foreground mb-8">
+            <p className="text-foreground/70 mb-8">
               Led by our founder <span className="text-foreground font-semibold">Revant Raj</span>, 
               our team combines deep expertise in artificial intelligence, machine learning, 
               and business automation to deliver solutions that drive real results.
@@ -34,7 +34,7 @@ export const About = () => {
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span className="text-muted-foreground">{item}</span>
+                  <span className="text-foreground/70">{item}</span>
                 </div>
               ))}
             </div>

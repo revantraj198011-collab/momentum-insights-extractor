@@ -8,18 +8,12 @@ import { Mission } from "@/components/Mission";
 import { BuiltFor } from "@/components/BuiltFor";
 import { CTA } from "@/components/CTA";
 import { Footer } from "@/components/Footer";
-import ShaderBackground from "@/components/ui/shader-background";
 
 const Index = () => {
   return (
-    <div className="min-h-screen relative">
-      {/* Global Shader Background */}
-      <div className="fixed inset-0 z-0">
-        <ShaderBackground className="opacity-70" />
-      </div>
-      
-      {/* Overlay for better content readability */}
-      <div className="fixed inset-0 z-0 bg-background/30" />
+    <div className="min-h-screen relative overflow-hidden">
+      <div className="pointer-events-none absolute -top-40 -right-32 h-[28rem] w-[28rem] rounded-full bg-primary/10 blur-3xl" />
+      <div className="pointer-events-none absolute top-64 -left-32 h-[24rem] w-[24rem] rounded-full bg-accent/10 blur-3xl" />
       
       {/* Content */}
       <div className="relative z-10">
