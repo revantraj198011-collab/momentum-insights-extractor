@@ -65,10 +65,7 @@ export const Footer = () => {
                 Contact
               </h4>
               <ul className="space-y-3 text-sm text-white/70">
-                <li className="flex items-center gap-3">
-                  <Phone className="h-4 w-4 text-white/50" />
-                  
-                </li>
+                
                 <li className="flex items-center gap-3">
                   <Mail className="h-4 w-4 text-white/50" />
                   <a href="mailto:hello@momentum.ai" className="hover:text-white transition-colors">
