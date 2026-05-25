@@ -87,7 +87,15 @@ export const BuiltFor = () => {
         {/* Bottom CTA hint */}
         <div className="text-center mt-16 animate-fade-in" style={{ animationDelay: "0.5s" }}>
           <p className="text-foreground/70">
-            Sound like you? <span className="text-primary font-medium">Let's talk.</span>
+            Sound like you?{" "}
+            <a
+        pin      href="https://calendly.com/momentumai18/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary font-medium"
+            >
+              Let's talk.
+            </a>
           </p>
         </div>
       </div>

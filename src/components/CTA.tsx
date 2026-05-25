@@ -16,7 +16,7 @@ export const CTA = () => {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button size="lg" className="rounded-full bg-foreground text-background hover:bg-foreground/90 transition-colors text-lg px-8 py-6 font-semibold" asChild>
-              <a href="https://calendly.com/revantraj198011/30min" target="_blank" rel="noopener noreferrer">
+              <a href="https://calendly.com/momentumai18/30min" target="_blank" rel="noopener noreferrer">
                 Book Consultation
                 <ArrowRight className="ml-2 w-5 h-5" />
               </a>

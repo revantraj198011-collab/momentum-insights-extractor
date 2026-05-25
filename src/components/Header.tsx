@@ -43,7 +43,7 @@ export const Header = () => {
           <div className="hidden md:block">
             <Button 
               className="rounded-full bg-foreground text-background hover:bg-foreground/90 transition-colors font-semibold"
-              onClick={() => window.open('https://calendly.com/revantraj198011/30min', '_blank')}
+              onClick={() => window.open('https://calendly.com/momentumai18/30min', '_blank')}
             >
               Get Started
             </Button>
@@ -75,7 +75,7 @@ export const Header = () => {
               ))}
               <Button 
                 className="rounded-full bg-foreground text-background hover:bg-foreground/90 transition-colors w-full mt-2 font-semibold"
-                onClick={() => window.open('https://calendly.com/revantraj198011/30min', '_blank')}
+                onClick={() => window.open('https://calendly.com/momentumai18/30min', '_blank')}
               >
                 Get Started
               </Button>

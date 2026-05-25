@@ -103,7 +103,7 @@ export const Footer = () => {
               </div>
               <div className="mt-6">
                 <a
-                  href="https://calendly.com/revantraj198011/30min"
+                  href="https://calendly.com/momentumai18/30min"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center rounded-full bg-white px-5 py-2 text-sm font-semibold text-black transition-colors hover:bg-white/90"
