@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Twitter, Phone, Mail, MapPin } from "lucide-react";
+import { Facebook, Instagram, Twitter, Phone, Mail, MapPin, Linkedin } from "lucide-react";
 import logo from "@/assets/momentum logo.png";
 
 const indexLinks = [
@@ -85,26 +85,20 @@ export const Footer = () => {
               </h4>
               <div className="flex items-center gap-3">
                 <a
-                  href="momentumai__"
+                  href="https://www.instagram.com/momentumai__/reels/"
                   aria-label="Instagram"
                   className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-white/70 hover:text-white transition-colors"
                 >
                   <Instagram className="h-4 w-4" />
 
                 </a>
+                
                 <a
-                  href="#"
-                  aria-label="Facebook"
+                  href="https://www.linkedin.com/company/117714122/"
+                  aria-label="Linkedin"
                   className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-white/70 hover:text-white transition-colors"
                 >
-                  <Facebook className="h-4 w-4" />
-                </a>
-                <a
-                  href="#"
-                  aria-label="Twitter"
-                  className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-white/70 hover:text-white transition-colors"
-                >
-                  <Twitter className="h-4 w-4" />
+                  <Linkedin className="h-4 w-4" />
                 </a>
               </div>
               <div className="mt-6">
