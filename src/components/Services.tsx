@@ -95,12 +95,6 @@ export const Services = () => {
                         </span>
                       </div>
                     </div>
-                    <span className="mt-3 inline-flex items-center gap-2 text-xs font-semibold text-foreground/60">
-                      Learn More
-                      <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-secondary text-foreground/70">
-                        →
-                      </span>
-                    </span>
                   </div>
                 </div>
             </div>

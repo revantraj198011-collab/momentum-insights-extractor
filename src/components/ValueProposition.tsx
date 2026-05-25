@@ -69,14 +69,7 @@ export const ValueProposition = () => {
                     </div>
                   ))}
                 </div>
-                <div className="mt-auto pt-6">
-                  <span className="inline-flex items-center gap-2 text-xs font-semibold text-foreground/60">
-                    Learn More
-                    <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-white/80 text-foreground/70">
-                      →
-                    </span>
-                  </span>
-                </div>
+                <div className="mt-auto pt-6" />
               </div>
             </div>
           ))}
